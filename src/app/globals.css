@@ -9,11 +9,19 @@
   --color-cyan-bright: #a5f3e0;
   
   --font-sans: var(--font-inter), system-ui, sans-serif;
-
   --transition-system: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  
   --animation-float: float 20s ease-in-out infinite;
   --animation-reveal: fade-in-up 0.6s ease-out forwards;
+}
+
+/* Light Theme Override */
+[data-theme='light'] {
+  --color-navy: #f8fafc;
+  --color-slate: #334155;
+  --color-light-slate: #475569;
+  --color-white: #0f172a;
+  --color-cyan: #0d9488;
+  --color-cyan-bright: #0f766e;
 }
 
 @keyframes float {
@@ -29,7 +37,7 @@
 
 @layer base {
   body {
-    @apply bg-navy text-slate font-sans antialiased selection:bg-cyan/30 selection:text-cyan-bright;
+    @apply bg-navy text-slate font-sans antialiased selection:bg-cyan/30 selection:text-cyan-bright transition-colors duration-500;
   }
   
   ::-webkit-scrollbar { width: 6px; height: 6px; }
@@ -46,6 +54,22 @@
   .bg-canvas {
     @apply fixed inset-0 -z-10 overflow-hidden pointer-events-none bg-navy;
     will-change: transform;
+  }
+  
+  .bg-canvas::before {
+    content: "";
+    @apply absolute inset-0 opacity-[0.03];
+    background-image: 
+      linear-gradient(to right, var(--color-white) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--color-white) 1px, transparent 1px);
+    background-size: 30px 30px;
+    mask-image: radial-gradient(circle at center, black 30%, transparent 90%);
+  }
+
+  .bg-canvas::after {
+    content: "";
+    @apply absolute inset-0 opacity-[0.15];
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, #000 2px, #000 4px);
   }
 }
 

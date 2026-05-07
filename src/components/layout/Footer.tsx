@@ -16,10 +16,14 @@ export default function Footer() {
       }).format(new Date()));
     };
 
-    formatTime(); // Set time immediately
+    formatTime(); 
     const timer = setInterval(formatTime, 1000);
     return () => clearInterval(timer);
   }, []);
+
+  const triggerTerminal = () => {
+    window.dispatchEvent(new CustomEvent('toggle-terminal'));
+  };
 
   return (
     <footer className="mt-20 md:mt-32 border-t border-white/10 bg-navy/50 pb-8 md:pb-0">
@@ -40,9 +44,9 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="text-right hidden lg:block">
-            <p className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/20 mb-2">System Authority</p>
-            <div className="text-4xl font-bold text-white/[0.03] select-none leading-none tracking-tighter">
+          <div className="text-right hidden lg:block text-white/20 select-none">
+            <p className="text-[10px] font-mono uppercase tracking-[0.3em] mb-2">System Authority</p>
+            <div className="text-4xl font-bold leading-none tracking-tighter">
               CHIRAG.OS
             </div>
           </div>
@@ -57,14 +61,20 @@ export default function Footer() {
             <div className="flex items-center justify-around md:justify-center gap-4 px-4 md:px-5 py-2 rounded-md bg-white/[0.03] border border-white/5 w-full md:w-auto">
               <div className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan shadow-[0_0_8px_rgba(100,255,218,0.5)]" />
-                <span className="text-white/90 font-bold whitespace-nowrap text-[9px] md:text-[10px]">KASARAGUPPE, SORAB, IN</span>
+                <span className="text-white/90 font-bold whitespace-nowrap text-[9px] md:text-[10px]">BANGALORE, IN</span>
               </div>
               <span className="text-white/10">|</span>
               <span className="text-white font-bold tabular-nums min-w-[70px] text-center" suppressHydrationWarning>
                 {time || "LOADING..."}
               </span>
               <span className="text-white/10">|</span>
-              <span className="text-cyan font-bold whitespace-nowrap">NOMINAL</span>
+              {/* TRIGGER: NOMINAL Button */}
+              <button 
+                onClick={triggerTerminal}
+                className="text-cyan font-bold whitespace-nowrap hover:text-cyan-bright transition-colors cursor-pointer"
+              >
+                NOMINAL
+              </button>
             </div>
           </div>
 
