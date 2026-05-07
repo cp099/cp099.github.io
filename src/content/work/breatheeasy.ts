@@ -7,6 +7,7 @@ export const content: ContentItem = {
   category: 'work',
   type: 'project',
   uid: 'CPP-2025-002-BREATHEEASY',
+  dependencies: ['Next.js 15', 'LightGBM', 'Python', 'CPCB'],
   summary: 'A real-time AQI analysis and forecasting system that turns complex air quality data into clear, usable insights.',
   blocks: [
 
