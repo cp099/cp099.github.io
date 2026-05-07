@@ -14,8 +14,8 @@ export type ContentType =
   | 'snippet';
 
 export const CATEGORY_MAP: Record<ContentCategory, ContentType[]> = {
-  work: ['project', 'role', 'research', 'major build'],
-  journey: ['learning', 'school', 'growth', 'experience'],
+  work:['project', 'role', 'research', 'major build'],
+  journey:['learning', 'school', 'growth', 'experience'],
   archive: ['experiment', 'note', 'snippet']
 };
 
@@ -86,4 +86,5 @@ export interface ContentItem {
   blocks: Block[];
   uid?: string;
   version?: string; 
+  dependencies?: string[]; // NEW: Added for System Interconnectivity
 }

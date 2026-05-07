@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getAllContent, getContentBySlug } from '@/lib/content';
 import BlockRenderer from '@/components/blocks/BlockRenderer';
+import CitationAction from '@/components/ui/CitationAction'; // Imported the new button
 
 export const dynamicParams = false;
 
@@ -48,13 +49,18 @@ export default async function ItemDetailPage({ params }: Props) {
     notFound();
   }
 
+  // Pre-generate the academic citation string
+  const year = new Date(item.date).getFullYear();
+  const uid = item.uid || `ARCHIVE-${item.slug.toUpperCase()}`;
+  const citationString = `Patil, C. P. (${year}). ${item.title}. CHIRAG.OS. Ref: ${uid}. https://cp099.github.io/cp099/item/${item.slug}`;
+
   return (
     <article className="pb-20 animate-reveal">
       <header className="mb-8 border-b border-white/5 pb-8">
         <div className="flex items-center gap-2 text-cyan-bright font-mono text-[9px] mb-3 uppercase tracking-[0.4em] font-bold">
           <span className="text-white/30">{item.category}</span>
           <span className="text-white/10">/</span>
-          <span className="text-cyan underline underline-offset-2 decoration-cyan/20">
+          <span className="text-cyan/80 underline underline-offset-2 decoration-cyan/20">
             {item.type}
           </span>
           <span className="text-white/10">/</span>
@@ -72,21 +78,40 @@ export default async function ItemDetailPage({ params }: Props) {
       
       <BlockRenderer blocks={item.blocks} />
 
-      <footer className="mt-24 pt-8 border-t border-white/5">
+      {/* --- DEPENDENCIES BLOCK --- */}
+      {item.dependencies && item.dependencies.length > 0 && (
+        <div className="mt-16 pt-8 border-t border-white/5">
+          <h3 className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/40 mb-4 flex items-center gap-3">
+            System Dependencies <span className="h-px bg-white/10 flex-grow" />
+          </h3>
+          <div className="flex flex-wrap gap-3">
+            {item.dependencies.map((dep) => (
+              <span key={dep} className="px-3 py-1.5 bg-white/[0.02] border border-white/10 rounded-md text-[10px] font-mono text-cyan/80 uppercase tracking-widest shadow-sm">
+                {dep}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* --- CITATION FOOTER --- */}
+      <footer className="mt-16 pt-8 border-t border-white/5">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-[9px] font-mono uppercase tracking-[0.2em] text-white/20">
           <div>
             <p className="mb-2 text-white/40">Reference UID</p>
-            <p>{item.uid || `ARCHIVE-${item.slug.toUpperCase()}`}</p>
+            <p className="text-white/80 font-bold">{uid}</p>
           </div>
           <div>
             <p className="mb-2 text-white/40">Data Integrity</p>
-            <p>Verified Stable / {item.date}</p>
+            <p className="text-white/80">Verified Stable / {item.date}</p>
           </div>
           <div className="md:text-right">
-            <p className="mb-2 text-white/40">Citation Permalink</p>
-            <p className="truncate overflow-hidden">
-              https://cp099.github.io/cp099/item/{item.slug}
+            <p className="mb-2 text-white/40">Citation Protocol</p>
+            <p className="truncate overflow-hidden mb-2 text-white/60">
+              Harvard / APA / System
             </p>
+            {/* The interactive Copy Button */}
+            <CitationAction citationText={citationString} />
           </div>
         </div>
       </footer>
