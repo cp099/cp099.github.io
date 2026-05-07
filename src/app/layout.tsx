@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
+import Terminal from "@/components/ui/Terminal"; // Import Terminal
 import "./globals.css";
 
 const inter = Inter({
@@ -93,7 +94,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className="antialiased flex flex-col min-h-screen relative suppressHydrationWarning">
-        {/* Structured Data for Search Engines */}
         <script
           type="application/ld+json"
           id="json-ld-profile"
@@ -110,6 +110,9 @@ export default function RootLayout({
         <main className="container mx-auto px-6 pt-24 flex-grow relative z-10">
           {children}
         </main>
+        
+        {/* ADDED TERMINAL HERE */}
+        <Terminal />
         <Footer />
       </body>
     </html>
