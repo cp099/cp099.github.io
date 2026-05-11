@@ -10,7 +10,7 @@ export default function HomePage() {
 
   // System Uptime Calculation (Accurate to Dec 19, 2007, 8:00 PM IST)
   useEffect(() => {
-    const startDate = new Date("2007-12-19T20:00:00+05:30").getTime();
+    const startDate = new Date("2007-12-19T20:01:00+05:30").getTime();
     
     const updateTimer = () => {
       const now = new Date().getTime();
