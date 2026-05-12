@@ -1,96 +1,131 @@
-// src/content/work/system-architecture.ts
 import { ContentItem } from '@/types/system';
 
 export const content: ContentItem = {
   slug: 'system-architecture',
-  title: 'OS Architecture',
+  title: 'CHIRAG.OS — Personal Operating System',
   date: '2025-01-24',
   category: 'work',
   type: 'major-build',
-  uid: 'CPP-2025-001-ALPHA',
-  summary: 'A deep dive into the modular block system driving this site.',
+  uid: 'CPP-2025-001-CHIRAG-OS',
+  summary: 'A headless, file-based digital environment engineered to replace the traditional portfolio with a highly structured, scalable data system.',
+  dependencies: ['Next.js 16', 'Tailwind CSS v4', 'TypeScript', 'GitHub Pages', 'JSON-LD'],
   blocks: [
+    // SPLASH SCREEN
+    { 
+      type: 'image', 
+      src: '/cp099/assets/og-image.png', 
+      alt: 'CHIRAG.OS System Splash Screen', 
+      caption: 'System Boot Screen & Identity Graphic' 
+    },
+
+    // INTRODUCTION
     { 
       type: 'paragraph', 
-      content: 'The core of this system is <strong>modularity</strong>. By treating content as data, we decouple the visual representation from the information itself. This allows for a truly scalable personal workspace.' 
-    },
-    
-    // THE DATA BLOCK: Perfect for technical specs or quick facts
-    { 
-      type: 'data', 
-      metrics: [
-        { label: 'Latency', value: '14ms' },
-        { label: 'System Type', value: 'Modular' },
-        { label: 'Build Version', value: 'v1.0.Stable' },
-        { label: 'Environment', value: 'Next.js 15' }
-      ] 
+      content: 'Standard web portfolios suffer from two fatal flaws: they are tedious to update, and they prioritize surface-level aesthetics over information density. <strong>CHIRAG.OS</strong> was architected from scratch to solve this. It is not a website; it is a modular, self-contained digital environment designed to aggregate and cite my work across technology and finance.' 
     },
 
     { 
       type: 'highlight', 
-      content: 'Information density is the key to an efficient personal operating system.' 
+      content: 'A portfolio tells people what you did. An operating system proves how you think.' 
     },
 
+    // SYSTEM SPECS
     { 
       type: 'heading', 
       level: 2, 
-      content: 'Technical Stack' 
+      content: 'Core Architecture & Specs' 
+    },
+    { 
+      type: 'paragraph', 
+      content: 'The system is deployed as a 100% Static HTML Export, entirely eliminating server-side vulnerabilities and database latency. Content is managed as strict TypeScript objects, allowing the UI to act purely as a rendering layer.' 
+    },
+    { 
+      type: 'data', 
+      metrics: [
+        { label: 'Framework', value: 'Next.js 16.2' },
+        { label: 'Styling', value: 'Tailwind v4' },
+        { label: 'Data Model', value: 'Headless / TS' },
+        { label: 'Hosting', value: 'GitHub Actions' }
+      ] 
     },
 
+    // THE BLOCK ENGINE
+    { 
+      type: 'heading', 
+      level: 2, 
+      content: 'The Block Engine CMS' 
+    },
+    { 
+      type: 'paragraph', 
+      content: 'To decouple content from design, I engineered a custom <strong>Block Renderer</strong>. Instead of writing raw HTML or Markdown for every new project, the system reads arrays of data blocks and dynamically constructs the page geometry.' 
+    },
+    { 
+      type: 'code', 
+      language: 'typescript', 
+      code: `// The core schema powering the entire OS
+export interface ContentItem {
+  slug: string;
+  title: string;
+  date: string;
+  category: ContentCategory;
+  type: ContentType; 
+  summary: string;
+  blocks: Block[]; // Dynamic UI Engine
+  uid?: string;
+  dependencies?: string[];
+}` 
+    },
+
+    // UX & IDENTITY
+    { 
+      type: 'heading', 
+      level: 2, 
+      content: 'Identity HUD & User Experience' 
+    },
+    { 
+      type: 'paragraph', 
+      content: 'The user interface abandons the "wall of text" biography in favor of a <strong>Heads-Up Display (HUD)</strong>. Mental bandwidth is visualized via a dynamic "Memory Allocation" bar chart, and system uptime is calculated live from my birthdate.' 
+    },
     { 
       type: 'list', 
       ordered: false, 
       items: [
-        'Next.js 15 (App Router) for the core framework',
-        'Tailwind CSS v4 for the design system',
-        'TypeScript for strict data modeling',
-        'Static Export for high-performance hosting'
+        'Ambient Blueprint Grid: A 30px CSS grid overlay that creates Z-depth without impacting performance.',
+        'Human/Machine Toggle: An interactive state-flip on the root portrait that reveals the personality behind the architecture.',
+        'Breadcrumb Pathing: Dynamic, terminal-style URL tracking embedded in the navigation bar.'
       ] 
     },
 
+    // SEO & AUTHORITY
     { 
       type: 'heading', 
       level: 2, 
-      content: 'System Configuration' 
+      content: 'Machine Readability & Authority' 
     },
-
     { 
       type: 'paragraph', 
-      content: 'The entire system is governed by a strict TypeScript interface to ensure data integrity across all modules.' 
+      content: 'CHIRAG.OS is optimized not just for human eyes, but for LLMs and search indexers. It features a fully automated <code>sitemap.ts</code> generator, IndexNow protocol integration for instant Bing/Yandex discovery, and a robust JSON-LD structured data layer mapping my professional entity.' 
     },
-
-    // THE CODE BLOCK: High-density technical documentation
     { 
-      type: 'code', 
-      language: 'typescript', 
-      code: `interface PersonalOSConfig {
-  density: 'high' | 'ultra';
-  navigation: 'split-nav';
-  hosting: 'static-export';
-  theme: {
-    primary: 'navy';
-    accent: 'cyan';
-  };
-}` 
+      type: 'paragraph', 
+      content: 'Furthermore, every project incorporates a <strong>Citation Engine</strong>. With a single click, users can copy a Wikipedia-grade Harvard/APA reference string, anchoring the project to a permanent UID.' 
     },
 
+    // THE TERMINAL
     { 
       type: 'heading', 
       level: 2, 
-      content: 'Visual Asset Integration' 
+      content: 'The Superuser Console' 
     },
-
-    // THE IMAGE BLOCK: Clean, framed visual content
-    { 
-      type: 'image', 
-      src: '/cp099/assets/portrait.jpg', 
-      alt: 'System Asset Check', 
-      caption: 'Visual asset integration check using the standard portrait asset.' 
-    },
-
     { 
       type: 'paragraph', 
-      content: 'This concludes the architectural overview of the system. Every block seen here is a reusable component designed for high-density information display.' 
+      content: 'Hidden within the system tray is an interactive Command Line Interface. Triggered by clicking the "NOMINAL" status indicator, the terminal allows advanced users to query system directories, read raw status logs, and execute a diagnostic override that forcefully toggles the system into a high-contrast Light Theme.' 
     },
+
+    // CONCLUSION
+    { 
+      type: 'highlight', 
+      content: 'CHIRAG.OS is a living foundation. It ensures that as my skills and projects evolve, the architecture housing them will never bottleneck their presentation.' 
+    }
   ]
 };
