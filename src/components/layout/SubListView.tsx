@@ -12,6 +12,9 @@ export default function SubListView({ category, sub }: SubListViewProps) {
     (item) => item.category === category && item.type === sub
   );
 
+  // NEW: Format the string for display
+  const displayTitle = sub.replace('-', ' ');
+
   return (
     <div className="animate-reveal">
       <header className="mb-8 md:mb-12 px-1">
@@ -20,10 +23,10 @@ export default function SubListView({ category, sub }: SubListViewProps) {
             {category}
           </Link>
           <span className="text-white/20">/</span>
-          <span className="text-white/60">{sub}s</span>
+          <span className="text-white/60">{displayTitle}s</span> {/* Uses formatted string */}
         </div>
         <h1 className="text-3xl font-bold capitalize tracking-tighter text-white md:text-4xl">
-          {sub}s
+          {displayTitle}s {/* Uses formatted string */}
         </h1>
       </header>
 

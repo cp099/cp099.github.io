@@ -24,6 +24,9 @@ export default function CategoryHubView({ category }: CategoryHubViewProps) {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
         {subCategories.map((sub) => {
           const count = allItems.filter((item) => item.type === sub).length;
+          
+          // NEW: Format the string for display (replaces hyphens with spaces)
+          const displayTitle = sub.replace('-', ' ');
 
           return (
             <Link 
@@ -33,14 +36,14 @@ export default function CategoryHubView({ category }: CategoryHubViewProps) {
             >
               <div>
                 <h2 className="text-xl md:text-2xl font-bold text-white group-hover:text-cyan transition-colors capitalize">
-                  {sub}s
+                  {displayTitle}s {/* Uses formatted string */}
                 </h2>
                 <p className="text-[11px] md:text-sm text-slate/60 mt-1 font-medium">
                   {count === 0 ? "No entries found." : `Exploring ${count} entries.`}
                 </p>
               </div>
               <div className="text-[9px] md:text-[10px] font-mono uppercase tracking-[0.2em] text-white/30 group-hover:text-cyan/60 transition-colors">
-                Directory / {sub}
+                Directory / {displayTitle} {/* Uses formatted string */}
               </div>
             </Link>
           );

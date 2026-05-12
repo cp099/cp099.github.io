@@ -6,7 +6,7 @@ export const content: ContentItem = {
   title: 'Sherlock — Lab Inventory & Lending System',
   date: '2025-11-11',
   category: 'work',
-  type: 'project',
+  type: 'major-build',
   uid: 'CPP-2025-002-SHERLOCK',
   summary: 'A full-stack inventory and lending system designed for real-world lab environments, rebuilt from an early Rails prototype into a production-ready Django application.',
 

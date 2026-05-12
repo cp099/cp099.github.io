@@ -4,7 +4,7 @@ export type ContentType =
   | 'project' 
   | 'role' 
   | 'research' 
-  | 'major build' 
+  | 'major-build' 
   | 'learning' 
   | 'school' 
   | 'growth' 
@@ -14,7 +14,7 @@ export type ContentType =
   | 'snippet';
 
 export const CATEGORY_MAP: Record<ContentCategory, ContentType[]> = {
-  work:['project', 'role', 'research', 'major build'],
+  work:['project', 'role', 'research', 'major-build'],
   journey:['learning', 'school', 'growth', 'experience'],
   archive: ['experiment', 'note', 'snippet']
 };

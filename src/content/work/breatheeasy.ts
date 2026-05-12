@@ -5,7 +5,7 @@ export const content: ContentItem = {
   title: 'BreatheEasy — AQI Intelligence System',
   date: '2025-01-20',
   category: 'work',
-  type: 'project',
+  type: 'major-build',
   uid: 'CPP-2025-002-BREATHEEASY',
   dependencies: ['Next.js 15', 'LightGBM', 'Python', 'CPCB'],
   summary: 'A real-time AQI analysis and forecasting system that turns complex air quality data into clear, usable insights.',

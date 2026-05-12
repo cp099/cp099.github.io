@@ -6,7 +6,7 @@ export const content: ContentItem = {
   title: 'OS Architecture',
   date: '2025-01-24',
   category: 'work',
-  type: 'project',
+  type: 'major-build',
   uid: 'CPP-2025-001-ALPHA',
   summary: 'A deep dive into the modular block system driving this site.',
   blocks: [
