@@ -10,6 +10,7 @@ import { content as cauveryHouseCaptain } from '@/content/work/cauvery-house-cap
 import { content as atlStudentMentor } from '@/content/work/atl-student-mentor';
 import { content as dipsmunLogistics } from '@/content/work/dipsmun-logistics';
 import { content as ecoSummitRegistrations } from '@/content/work/eco-summit-registrations';
+import { content as theEnigmaConfluence } from '@/content/work/the-enigma-confluence';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -23,6 +24,7 @@ const ALL_CONTENT: ContentItem[] = [
   atlStudentMentor,
   dipsmunLogistics,
   ecoSummitRegistrations,
+  theEnigmaConfluence
 ];
 
 
