@@ -9,6 +9,7 @@ import { content as pledgeCouncilFounder } from '@/content/work/pledge-council-f
 import { content as cauveryHouseCaptain } from '@/content/work/cauvery-house-captain';
 import { content as atlStudentMentor } from '@/content/work/atl-student-mentor';
 import { content as dipsmunLogistics } from '@/content/work/dipsmun-logistics';
+import { content as ecoSummitRegistrations } from '@/content/work/eco-summit-registrations';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -21,6 +22,7 @@ const ALL_CONTENT: ContentItem[] = [
   cauveryHouseCaptain,
   atlStudentMentor,
   dipsmunLogistics,
+  ecoSummitRegistrations,
 ];
 
 
