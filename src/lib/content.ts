@@ -14,6 +14,7 @@ import { content as theEnigmaConfluence } from '@/content/work/the-enigma-conflu
 import { content as careerConnect } from '@/content/work/career-connect';
 import { content as indiaAirQualityDataset } from '@/content/work/india-air-quality-dataset';
 import { content as smartparkAssistant } from '@/content/work/smartpark-assistant';
+import { content as doorOpenDetection } from '@/content/work/door-open-detection';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -31,6 +32,7 @@ const ALL_CONTENT: ContentItem[] = [
   careerConnect,
   indiaAirQualityDataset,
   smartparkAssistant,
+  doorOpenDetection,
 ];
 
 
