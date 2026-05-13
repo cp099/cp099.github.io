@@ -13,6 +13,7 @@ import { content as ecoSummitRegistrations } from '@/content/work/eco-summit-reg
 import { content as theEnigmaConfluence } from '@/content/work/the-enigma-confluence';
 import { content as careerConnect } from '@/content/work/career-connect';
 import { content as indiaAirQualityDataset } from '@/content/work/india-air-quality-dataset';
+import { content as smartparkAssistant } from '@/content/work/smartpark-assistant';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -29,6 +30,7 @@ const ALL_CONTENT: ContentItem[] = [
   theEnigmaConfluence,
   careerConnect,
   indiaAirQualityDataset,
+  smartparkAssistant,
 ];
 
 
