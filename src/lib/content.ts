@@ -15,6 +15,7 @@ import { content as careerConnect } from '@/content/work/career-connect';
 import { content as indiaAirQualityDataset } from '@/content/work/india-air-quality-dataset';
 import { content as smartparkAssistant } from '@/content/work/smartpark-assistant';
 import { content as doorOpenDetection } from '@/content/work/door-open-detection';
+import { content as dualnozzleenginev1 } from '@/content/work/dual-nozzle-engine-v1';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -33,6 +34,7 @@ const ALL_CONTENT: ContentItem[] = [
   indiaAirQualityDataset,
   smartparkAssistant,
   doorOpenDetection,
+  dualnozzleenginev1,
 ];
 
 
