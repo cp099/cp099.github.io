@@ -16,6 +16,7 @@ import { content as indiaAirQualityDataset } from '@/content/work/india-air-qual
 import { content as smartparkAssistant } from '@/content/work/smartpark-assistant';
 import { content as doorOpenDetection } from '@/content/work/door-open-detection';
 import { content as dualnozzleenginev1 } from '@/content/work/dual-nozzle-engine-v1';
+import { content as electromagneticLaunchSystem } from '@/content/work/electromagnetic-launch-system';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -35,6 +36,7 @@ const ALL_CONTENT: ContentItem[] = [
   smartparkAssistant,
   doorOpenDetection,
   dualnozzleenginev1,
+  electromagneticLaunchSystem,
 ];
 
 
