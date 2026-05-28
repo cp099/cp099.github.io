@@ -129,7 +129,7 @@ export const content: ContentItem = {
     // IMAGE
     {
       type: 'image',
-      src: '/cp099/assets/Work/dipsmun-logistics/1.jpeg',
+      src: '/assets/Work/dipsmun-logistics/1.jpeg',
       alt: 'DiPSMUN Logistics Recognition',
       caption: 'Receiving recognition for logistics leadership and operational execution at DiPSMUN 2025'
     },
@@ -170,7 +170,7 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/cp099/assets/Work/dipsmun-logistics/certificate.jpg',
+      src: '/assets/Work/dipsmun-logistics/certificate.jpg',
       alt: 'DiPSMUN Logistics Certificate',
       caption: 'Certificate of Appreciation — Head of Logistics, DiPSMUN 2025'
     }

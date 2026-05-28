@@ -42,7 +42,7 @@ export default function HomePage() {
             }`}
           >
             <Image 
-              src="/cp099/assets/portrait.jpg"
+              src="/assets/portrait.jpg"
               alt="Chirag P Patil" 
               fill
               priority

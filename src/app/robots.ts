@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://cp099.github.io/cp099/sitemap.xml',
+    sitemap: 'https://cp099.github.io/sitemap.xml',
   };
 }

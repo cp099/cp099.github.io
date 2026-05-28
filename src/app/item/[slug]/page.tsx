@@ -30,12 +30,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: item.title,
     description: item.summary,
     alternates: {
-      canonical: `https://cp099.github.io/cp099/item/${slug}`,
+      canonical: `https://cp099.github.io/item/${slug}`,
     },
     openGraph: {
       title: item.title,
       description: item.summary,
-      url: `https://cp099.github.io/cp099/item/${slug}`,
+      url: `https://cp099.github.io/item/${slug}`,
       type: 'article',
     },
   };
@@ -52,7 +52,7 @@ export default async function ItemDetailPage({ params }: Props) {
   // Pre-generate the academic citation string
   const year = new Date(item.date).getFullYear();
   const uid = item.uid || `ARCHIVE-${item.slug.toUpperCase()}`;
-  const citationString = `Patil, C. P. (${year}). ${item.title}. CHIRAG.OS. Ref: ${uid}. https://cp099.github.io/cp099/item/${item.slug}`;
+  const citationString = `Patil, C. P. (${year}). ${item.title}. CHIRAG.OS. Ref: ${uid}. https://cp099.github.io/item/${item.slug}`;
 
   return (
     <article className="pb-20 animate-reveal">

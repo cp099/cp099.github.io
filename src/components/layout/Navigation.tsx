@@ -16,7 +16,7 @@ export default function Navigation() {
   // OS Pathing Logic: Translates browser URL into System Path
   const getPathDisplay = () => {
     // Remove the GitHub Pages basePath for clean logic
-    const cleanPath = pathname.replace('/cp099', '');
+    const cleanPath = pathname;
     
     if (cleanPath === '' || cleanPath === '/') return 'ROOT';
 

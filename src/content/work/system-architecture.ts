@@ -13,7 +13,7 @@ export const content: ContentItem = {
     // SPLASH SCREEN
     { 
       type: 'image', 
-      src: '/cp099/assets/og-image.png', 
+      src: '/assets/og-image.png', 
       alt: 'CHIRAG.OS System Splash Screen', 
       caption: 'System Boot Screen & Identity Graphic' 
     },

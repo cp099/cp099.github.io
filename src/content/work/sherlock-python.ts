@@ -15,7 +15,7 @@ export const content: ContentItem = {
     // LOGO (identity)
     {
       type: 'image',
-      src: '/cp099/assets/Work/Sherlock-python/logo.svg',
+      src: '/assets/Work/Sherlock-python/logo.svg',
       alt: 'Sherlock Logo',
       caption: 'Sherlock System Identity'
     },
@@ -102,13 +102,13 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/cp099/assets/Work/Sherlock-python/dashboard.png',
+      src: '/assets/Work/Sherlock-python/dashboard.png',
       alt: 'Dashboard',
       caption: 'Command center dashboard providing real-time visibility into inventory and activity'
     },
     {
       type: 'image',
-      src: '/cp099/assets/Work/Sherlock-python/checkout-terminal.png',
+      src: '/assets/Work/Sherlock-python/checkout-terminal.png',
       alt: 'Checkout Terminal',
       caption: 'Fast, kiosk-style interface designed for efficient lending operations'
     },
@@ -120,13 +120,13 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/cp099/assets/Work/Sherlock-python/item-detail.png',
+      src: '/assets/Work/Sherlock-python/item-detail.png',
       alt: 'Item Detail',
       caption: 'Detailed item-level tracking with audit history and status visibility'
     },
     {
       type: 'image',
-      src: '/cp099/assets/Work/Sherlock-python/on-loan-report.png',
+      src: '/assets/Work/Sherlock-python/on-loan-report.png',
       alt: 'Loan Report',
       caption: 'System-wide insights into active loans and overdue items'
     },

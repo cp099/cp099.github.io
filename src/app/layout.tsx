@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://cp099.github.io/cp099"),
+  metadataBase: new URL("https://cp099.github.io"),
   title: {
     default: "Chirag P Patil | Personal OS",
     template: "%s | Chirag P Patil",
@@ -32,13 +32,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Chirag P Patil | Personal Operating System",
     description: "Chirag P Patil's Personal OS — A modular systems engineering portfolio documenting software builds, finance workflows, and leadership experiences from Bangalore, India.",
-    url: "https://cp099.github.io/cp099",
+    url: "https://cp099.github.io",
     siteName: "CHIRAG.OS",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/cp099/assets/og-image.png", 
+        url: "/assets/og-image.png", 
         width: 1200,
         height: 630,
         alt: "CHIRAG.OS — Personal Operating System",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Chirag P Patil | Personal OS",
     description: "Chirag P Patil's Personal OS — A modular systems engineering portfolio documenting software builds, finance workflows, and leadership experiences from Bangalore, India.",
-    images: ["/cp099/assets/og-image.png"],
+    images: ["/assets/og-image.png"],
   },
 
   robots: {
@@ -75,8 +75,8 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Chirag P Patil",
-    "url": "https://cp099.github.io/cp099",
-    "image": "https://cp099.github.io/cp099/assets/portrait.jpg",
+    "url": "https://cp099.github.io",
+    "image": "https://cp099.github.io/assets/portrait.jpg",
     "jobTitle": "Systems Builder & Student",
     "address": {
       "@type": "PostalAddress",

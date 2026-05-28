@@ -6,7 +6,7 @@ import { CATEGORY_MAP, ContentCategory } from '@/types/system';
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://cp099.github.io/cp099';
+  const baseUrl = 'https://cp099.github.io';
   const allContent = getAllContent();
 
   // We use a fixed date for the static export to avoid hydration/build mismatches

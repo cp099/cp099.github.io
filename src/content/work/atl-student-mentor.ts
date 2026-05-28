@@ -49,7 +49,7 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/cp099/assets/Work/atl-mentor/3.jpeg',
+      src: '/assets/Work/atl-mentor/3.jpeg',
       alt: 'ATL Teaching Session',
       caption: 'Taking full sessions — working directly with students on real projects'
     },
@@ -133,25 +133,25 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/cp099/assets/Work/atl-mentor/1.jpeg',
+      src: '/assets/Work/atl-mentor/1.jpeg',
       alt: 'Orientation',
       caption: 'Introducing ATL — setting context, purpose, and expectations'
     },
     {
       type: 'image',
-      src: '/cp099/assets/Work/atl-mentor/2.jpeg',
+      src: '/assets/Work/atl-mentor/2.jpeg',
       alt: 'Orientation Stage',
       caption: 'Explaining opportunities, structure, and pathways inside the lab'
     },
     {
       type: 'image',
-      src: '/cp099/assets/Work/atl-mentor/4.jpeg',
+      src: '/assets/Work/atl-mentor/4.jpeg',
       alt: 'Orientation Talk',
       caption: 'Presenting ATL as a system — not just a space'
     },
     {
       type: 'image',
-      src: '/cp099/assets/Work/atl-mentor/5.jpeg',
+      src: '/assets/Work/atl-mentor/5.jpeg',
       alt: 'Orientation Interaction',
       caption: 'Making the lab approachable — encouraging participation and curiosity'
     },
@@ -239,7 +239,7 @@ export const content: ContentItem = {
 
     {
       type: 'image',
-      src: '/cp099/assets/Work/atl-mentor/certificate.jpg',
+      src: '/assets/Work/atl-mentor/certificate.jpg',
       alt: 'Certificate',
       caption: 'Certificate of Appreciation — ATL Student Mentor'
     }
