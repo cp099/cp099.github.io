@@ -1,5 +1,6 @@
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import DOMPurify from 'isomorphic-dompurify';
 
 /**
  * Merges Tailwind classes and handles conditional logic safely.
@@ -23,11 +24,11 @@ export function formatDate(dateString: string) {
 
 /**
  * Defensive HTML sanitizer to neutralize XSS payload vectors (script tags, event handlers, javascript: URIs).
- * Essential for wrapping dangerouslySetInnerHTML blocks safely.
+ * Essential for wrapping dangerouslySetInnerHTML blocks safely. Uses isomorphic-dompurify for parser-level safety.
  */
 export function sanitizeHtml(html: string): string {
-  return html
-    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
-    .replace(/on\w+\s*=\s*(['"])(.*?)\1/gi, '')
-    .replace(/href\s*=\s*(['"])javascript:(.*?)\1/gi, 'href="#"');
+  return DOMPurify.sanitize(html, {
+    ALLOWED_TAGS: ['a', 'strong', 'em', 'br', 'code', 'span'],
+    ALLOWED_ATTR: ['href', 'target', 'rel', 'class'],
+  });
 }
