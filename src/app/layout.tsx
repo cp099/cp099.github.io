@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     default: "Chirag P Patil | Personal OS",
     template: "%s | Chirag P Patil",
   },
-  description: "Architecting modular environments and documenting the intersection of technology, finance, and experience.",
+  description: "Chirag P Patil's Personal OS — A modular systems engineering portfolio documenting software builds, finance workflows, and leadership experiences from Bangalore, India.",
   alternates: {
     canonical: "./",
   },
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Chirag P Patil | Personal Operating System",
-    description: "A modular personal operating system documenting systems engineering, finance, and professional growth.",
+    description: "Chirag P Patil's Personal OS — A modular systems engineering portfolio documenting software builds, finance workflows, and leadership experiences from Bangalore, India.",
     url: "https://cp099.github.io/cp099",
     siteName: "CHIRAG.OS",
     locale: "en_US",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Chirag P Patil | Personal OS",
-    description: "Systems Builder • Exploring Tech & Finance",
+    description: "Chirag P Patil's Personal OS — A modular systems engineering portfolio documenting software builds, finance workflows, and leadership experiences from Bangalore, India.",
     images: ["/cp099/assets/og-image.png"],
   },
 
