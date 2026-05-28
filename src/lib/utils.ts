@@ -20,3 +20,14 @@ export function formatDate(dateString: string) {
     year: 'numeric',
   }).toUpperCase();
 }
+
+/**
+ * Defensive HTML sanitizer to neutralize XSS payload vectors (script tags, event handlers, javascript: URIs).
+ * Essential for wrapping dangerouslySetInnerHTML blocks safely.
+ */
+export function sanitizeHtml(html: string): string {
+  return html
+    .replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '')
+    .replace(/on\w+\s*=\s*(['"])(.*?)\1/gi, '')
+    .replace(/href\s*=\s*(['"])javascript:(.*?)\1/gi, 'href="#"');
+}

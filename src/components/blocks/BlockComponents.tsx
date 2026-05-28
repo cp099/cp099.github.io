@@ -9,6 +9,7 @@ import {
   CodeBlock,
   DataBlock 
 } from '@/types/system';
+import { sanitizeHtml } from '@/lib/utils';
 
 export const Heading = ({ block }: { block: HeadingBlock }) => {
   const { level, content } = block;
@@ -20,14 +21,14 @@ export const Heading = ({ block }: { block: HeadingBlock }) => {
 export const Paragraph = ({ block }: { block: ParagraphBlock }) => (
   <p 
     className="text-sm leading-relaxed text-slate/90 mb-3 last:mb-0 transition-colors duration-500 hover:text-white" 
-    dangerouslySetInnerHTML={{ __html: block.content }} 
+    dangerouslySetInnerHTML={{ __html: sanitizeHtml(block.content) }} 
   />
 );
 
 export const Highlight = ({ block }: { block: HighlightBlock }) => (
   <div className="my-6 p-4 border-l border-cyan/40 bg-white/[0.01] rounded-r transition-all duration-300 hover:bg-white/[0.03]">
     <p className="text-base italic text-light-slate leading-normal">
-      "{block.content}"
+      &ldquo;{block.content}&rdquo;
     </p>
   </div>
 );
