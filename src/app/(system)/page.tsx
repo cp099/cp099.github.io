@@ -161,7 +161,7 @@ export default function HomePage() {
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-white/40 mt-0.5">❯</span>
-                <p className="italic">"Growth becomes clearer when it’s documented. This space reflects what I’m learning, building, and becoming."</p>
+                <p className="italic">{"\"Growth becomes clearer when it’s documented. This space reflects what I’m learning, building, and becoming.\""}</p>
               </div>
             </div>
 

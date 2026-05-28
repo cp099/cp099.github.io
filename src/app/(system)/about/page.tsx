@@ -1,3 +1,10 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Biography, origins, professional trajectory, and leadership experience of Chirag P Patil.",
+};
+
 export default function AboutPage() {
   return (
     <article className="max-w-3xl animate-reveal pb-20">
@@ -36,7 +43,7 @@ export default function AboutPage() {
         </section>
 
         <blockquote className="italic text-light-slate/90 pt-8 border-t border-white/5 border-b border-white/5 py-6">
-          "This system exists because I believe growth becomes clearer when it’s documented. It’s not just a showcase—it’s a space that reflects what I’m learning, building, and becoming."
+          {"\"This system exists because I believe growth becomes clearer when it’s documented. It’s not just a showcase—it’s a space that reflects what I’m learning, building, and becoming.\""}
         </blockquote>
       </div>
     </article>

@@ -38,7 +38,7 @@ export default function Terminal() {
     if (cmd === 'clear') { setHistory([]); setInput(""); return; }
     if (cmd === 'exit') { setIsOpen(false); setInput(""); return; }
 
-    const response = COMMANDS[cmd] ? (typeof COMMANDS[cmd] === 'function' ? (COMMANDS[cmd] as Function)() : COMMANDS[cmd]) : `ERR: COMMAND '${cmd}' NOT RECOGNIZED`;
+    const response = COMMANDS[cmd] ? (typeof COMMANDS[cmd] === 'function' ? (COMMANDS[cmd] as (() => string))() : COMMANDS[cmd] as string) : `ERR: COMMAND '${cmd}' NOT RECOGNIZED`;
 
     setHistory([...history, `❯ ${input}`, response, ""]);
     setInput("");
