@@ -23,10 +23,10 @@ export default function SubListView({ category, sub }: SubListViewProps) {
             {category}
           </Link>
           <span className="text-white/20">/</span>
-          <span className="text-white/60">{displayTitle}s</span> {/* Uses formatted string */}
+          <span className="text-white/60">{displayTitle === 'education' ? displayTitle : `${displayTitle}s`}</span>
         </div>
         <h1 className="text-3xl font-bold capitalize tracking-tighter text-white md:text-4xl">
-          {displayTitle}s {/* Uses formatted string */}
+          {displayTitle === 'education' ? displayTitle : `${displayTitle}s`}
         </h1>
       </header>
 

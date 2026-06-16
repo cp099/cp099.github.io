@@ -15,8 +15,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { sub } = await params;
   const displayTitle = sub.replace('-', ' ');
   const titleFormatted = displayTitle.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  const titlePlural = sub === 'education' ? titleFormatted : `${titleFormatted}s`;
   return {
-    title: `${titleFormatted}s | Journey`,
+    title: `${titlePlural} | Journey`,
     description: `Browse Chirag P Patil's milestones, experiences, and academic achievements under the ${displayTitle} category.`,
   };
 }

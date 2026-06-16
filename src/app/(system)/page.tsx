@@ -181,7 +181,7 @@ export default function HomePage() {
           </Link>
           <Link href="/journey" className="group p-6 md:p-8 border border-white/5 rounded-xl bg-white/[0.01] hover:bg-white/[0.03] hover:border-cyan/20 transition-all duration-300 shadow-lg hover:shadow-cyan/5">
             <h3 className="text-lg font-bold text-white group-hover:text-cyan transition-colors mb-2">Journey</h3>
-            <p className="text-xs md:text-sm text-slate/80 leading-relaxed">School, experiences, and the path that’s shaping how I think.</p>
+            <p className="text-xs md:text-sm text-slate/80 leading-relaxed">Education, experiences, and the path that’s shaping how I think.</p>
           </Link>
           <Link href="/archive" className="group p-6 md:p-8 border border-white/5 rounded-xl bg-white/[0.01] hover:bg-white/[0.03] hover:border-cyan/20 transition-all duration-300 shadow-lg hover:shadow-cyan/5">
             <h3 className="text-lg font-bold text-white group-hover:text-cyan transition-colors mb-2">Archive</h3>

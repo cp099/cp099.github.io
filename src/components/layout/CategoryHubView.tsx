@@ -36,7 +36,7 @@ export default function CategoryHubView({ category }: CategoryHubViewProps) {
             >
               <div>
                 <h2 className="text-xl md:text-2xl font-bold text-white group-hover:text-cyan transition-colors capitalize">
-                  {displayTitle}s {/* Uses formatted string */}
+                  {displayTitle === 'education' ? displayTitle : `${displayTitle}s`}
                 </h2>
                 <p className="text-[11px] md:text-sm text-slate/60 mt-1 font-medium">
                   {count === 0 ? "No entries found." : `Exploring ${count} entries.`}
