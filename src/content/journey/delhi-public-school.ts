@@ -7,7 +7,7 @@ export const content: ContentItem = {
   category: 'journey',
   type: 'education',
   uid: 'CPP-EDU-2026-DPSBS',
-  summary: 'Fourteen-year journey documenting the discovery of technology, leadership, systems thinking, and personal identity from Grade 1 to graduation.',
+  summary: 'Twelve-year journey documenting the discovery of technology, leadership, systems thinking, and personal identity from Grade 1 to graduation.',
   blocks: [
     // HERO VISUAL
     {
