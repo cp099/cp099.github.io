@@ -21,6 +21,10 @@ import { content as electromagneticLaunchSystem } from '@/content/work/electroma
 import { content as christUniversity } from '@/content/journey/christ-university';
 import { content as certificationsCredentials } from '@/content/journey/certifications-credentials';
 import { content as aiScopeCompetition } from '@/content/work/ai-scope-competition';
+import { content as valoraValuationSociety } from '@/content/work/valora-valuation-society';
+import { content as cucaPromotionsSponsorships } from '@/content/work/cuca-promotions-sponsorships';
+import { content as capsGroupPeerTrainer } from '@/content/work/caps-group-peer-trainer';
+import { content as bycStudentCouncil } from '@/content/work/byc-student-council';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -45,6 +49,10 @@ const ALL_CONTENT: ContentItem[] = [
   christUniversity,
   certificationsCredentials,
   aiScopeCompetition,
+  valoraValuationSociety,
+  cucaPromotionsSponsorships,
+  capsGroupPeerTrainer,
+  bycStudentCouncil,
 ];
 
 
