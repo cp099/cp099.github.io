@@ -24,7 +24,7 @@ export default function AboutPage() {
         <section>
           <h2 className="text-white font-bold mb-3 uppercase tracking-wider text-sm">Professional Trajectory</h2>
           <p>
-            Over time, this has grown into working across both technology and commerce. I build projects like <span className="text-white font-medium">BreatheEasy</span> and explore system design, while also spending time understanding how financial systems operate and are structured. It’s less about choosing one path and more about understanding how these worlds connect.
+            Over time, this has grown into working across both technology and commerce. Currently pursuing a Bachelor of Commerce in <span className="text-white font-medium">Applied Finance and Analytics</span> at <span className="text-white font-medium">Christ University</span>, I focus on the intersection of quantitative data science, corporate accounting, and systems architecture. I build projects like <span className="text-white font-medium">BreatheEasy</span> and explore data systems, while developing institutional financial literacy through programs like Bloomberg Finance Fundamentals. It’s less about choosing one path and more about understanding how computational tools and capital workflows reinforce one another.
           </p>
         </section>
 

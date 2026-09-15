@@ -18,6 +18,9 @@ import { content as smartparkAssistant } from '@/content/work/smartpark-assistan
 import { content as doorOpenDetection } from '@/content/work/door-open-detection';
 import { content as dualnozzleenginev1 } from '@/content/work/dual-nozzle-engine-v1';
 import { content as electromagneticLaunchSystem } from '@/content/work/electromagnetic-launch-system';
+import { content as christUniversity } from '@/content/journey/christ-university';
+import { content as certificationsCredentials } from '@/content/journey/certifications-credentials';
+import { content as aiScopeCompetition } from '@/content/work/ai-scope-competition';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -39,6 +42,9 @@ const ALL_CONTENT: ContentItem[] = [
   doorOpenDetection,
   dualnozzleenginev1,
   electromagneticLaunchSystem,
+  christUniversity,
+  certificationsCredentials,
+  aiScopeCompetition,
 ];
 
 

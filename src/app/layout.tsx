@@ -77,7 +77,11 @@ export default function RootLayout({
     "name": "Chirag P Patil",
     "url": "https://cp099.github.io",
     "image": "https://cp099.github.io/assets/portrait.webp",
-    "jobTitle": "Systems Builder & Student",
+    "jobTitle": "Systems Builder • B.Com (Applied Finance & Analytics) @ Christ University",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Christ University, Bangalore"
+    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Bangalore",
@@ -88,7 +92,7 @@ export default function RootLayout({
       "https://github.com/cp099",
       "https://www.linkedin.com/in/chiragppatil/"
     ],
-    "description": "I explore how systems work across technology and finance and build modular environments."
+    "description": "B.Com (Applied Finance & Analytics) scholar at Christ University Bangalore, exploring systems engineering, quantitative finance, and modular tech architectures."
   };
 
   return (

@@ -81,7 +81,7 @@ export default function HomePage() {
 
             <div className="space-y-4 max-w-2xl">
               <p className="text-lg md:text-xl text-cyan-bright font-medium tracking-tight leading-snug">
-                I’m Chirag — exploring how systems work across technology and finance, and building things that make them clearer.
+                I’m Chirag — B.Com (Applied Finance & Analytics) student at Christ University, exploring how systems work across technology and finance, and building things that make them clearer.
               </p>
             </div>
           </header>
@@ -154,6 +154,10 @@ export default function HomePage() {
               <div className="flex items-start gap-3">
                 <span className="text-cyan mt-0.5 animate-pulse">❯</span>
                 <p><span className="text-white/70">SYS.LOG:</span> Integrating BreatheEasy ML predictions with live CPCB feeds.</p>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-cyan mt-0.5">❯</span>
+                <p><span className="text-white/70">SYS.LOG:</span> Modeling quantitative financial systems & analytics at Christ University.</p>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-cyan mt-0.5">❯</span>
