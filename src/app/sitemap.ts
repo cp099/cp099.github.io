@@ -13,11 +13,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const buildDate = new Date();
 
   // 1. Core Static Pages
-  const staticPages = ['', '/about', '/work', '/journey'].map((route) => ({
+  const staticPages = ['', '/about', '/work', '/journey', '/privacy', '/terms'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: buildDate,
     changeFrequency: 'daily' as const,
-    priority: route === '' ? 1.0 : 0.8,
+    priority: route === '' ? 1.0 : (route === '/privacy' || route === '/terms' ? 0.3 : 0.8),
   }));
 
   // 2. Directory Hub Pages

@@ -9,11 +9,13 @@ export default function Terminal() {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const COMMANDS: Record<string, string | (() => string)> = {
-    help: "AVAILABLE: [ls] [whoami] [status] [contact] [theme] [clear] [exit]",
-    ls: "ROOT: /work  /journey",
+    help: "AVAILABLE: [ls] [whoami] [status] [contact] [privacy] [terms] [theme] [clear] [exit]",
+    ls: "ROOT: /work  /journey  /about  /privacy  /terms",
     whoami: "ENTITY: CHIRAG_P_PATIL // STATUS: SYSTEMS_BUILDER // LOC: BGL_IN",
     status: "KERNEL: V1.0.STABLE // UPTIME: 100% // INTEGRITY: VERIFIED",
     contact: "EMAIL: chiragpatil07@gmail.com",
+    privacy: "POLICY: Zero ad-trackers. Local storage strictly for UI state. View: /privacy",
+    terms: "TERMS: Open-source builds governed by respective licenses. View: /terms",
     theme: () => {
       const isLight = document.documentElement.getAttribute('data-theme') === 'light';
       document.documentElement.setAttribute('data-theme', isLight ? 'dark' : 'light');

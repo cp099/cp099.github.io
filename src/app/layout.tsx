@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import Terminal from "@/components/ui/Terminal"; // Import Terminal
+import CookieConsent from "@/components/ui/CookieConsent";
+import Analytics from "@/components/analytics/Analytics";
 import "./globals.css";
 
 const inter = Inter({
@@ -117,7 +119,9 @@ export default function RootLayout({
         
         {/* ADDED TERMINAL HERE */}
         <Terminal />
+        <CookieConsent />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

@@ -83,6 +83,24 @@ export default function HomePage() {
               <p className="text-lg md:text-xl text-cyan-bright font-medium tracking-tight leading-snug">
                 I’m Chirag — B.Com (Applied Finance & Analytics) student at Christ University, exploring how systems work across technology and finance, and building things that make them clearer.
               </p>
+              
+              {/* Primary Call to Action */}
+              <div className="flex flex-wrap items-center gap-3 pt-2">
+                <Link
+                  href="/work"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-cyan text-navy font-mono text-xs font-bold uppercase tracking-wider rounded shadow-[0_0_20px_rgba(100,255,218,0.2)] hover:bg-cyan-bright hover:shadow-[0_0_25px_rgba(100,255,218,0.35)] transition-all duration-300 group"
+                >
+                  <span>Explore Work</span>
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">❯</span>
+                </Link>
+                <a
+                  href="mailto:chiragpatil07@gmail.com"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/[0.03] border border-white/10 text-white font-mono text-xs uppercase tracking-wider rounded hover:bg-white/[0.08] hover:border-cyan/30 hover:text-cyan-bright transition-all duration-300"
+                >
+                  <span>Initialize Contact</span>
+                  <span className="text-white/40">❯</span>
+                </a>
+              </div>
             </div>
           </header>
 

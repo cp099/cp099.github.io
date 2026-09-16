@@ -55,8 +55,12 @@ export default function Footer() {
         </div>
 
         <div className="pt-6 border-t border-white/10 flex flex-col items-center gap-6 text-[10px] font-mono uppercase tracking-[0.2em] md:grid md:grid-cols-3">
-          <div className="flex items-center gap-4 text-white/70 order-2 md:order-1 md:justify-start">
+          <div className="flex flex-wrap items-center gap-3 text-white/70 order-2 md:order-1 md:justify-start">
             <span className="font-bold whitespace-nowrap">© 2025 CHIRAG P PATIL</span>
+            <span className="text-white/20 select-none" aria-hidden="true">·</span>
+            <Link href="/privacy" className="hover:text-cyan transition-colors">PRIVACY</Link>
+            <span className="text-white/20 select-none" aria-hidden="true">·</span>
+            <Link href="/terms" className="hover:text-cyan transition-colors">TERMS</Link>
           </div>
 
           <div className="flex justify-center order-1 md:order-2 w-full md:w-auto">
