@@ -10,7 +10,7 @@ export default function Terminal() {
 
   const COMMANDS: Record<string, string | (() => string)> = {
     help: "AVAILABLE: [ls] [whoami] [status] [contact] [theme] [clear] [exit]",
-    ls: "ROOT: /work  /journey  /archive",
+    ls: "ROOT: /work  /journey",
     whoami: "ENTITY: CHIRAG_P_PATIL // STATUS: SYSTEMS_BUILDER // LOC: BGL_IN",
     status: "KERNEL: V1.0.STABLE // UPTIME: 100% // INTEGRITY: VERIFIED",
     contact: "EMAIL: chiragpatil07@gmail.com",

@@ -178,18 +178,14 @@ export default function HomePage() {
         <h2 className="text-[9px] font-mono uppercase tracking-[0.5em] text-white/70 mb-8 px-2 md:px-0 flex items-center gap-4">
           System Directory <span className="h-px bg-white/10 flex-grow" />
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
           <Link href="/work" className="group p-6 md:p-8 border border-white/5 rounded-xl bg-white/[0.01] hover:bg-white/[0.03] hover:border-cyan/20 transition-all duration-300 shadow-lg hover:shadow-cyan/5">
             <h3 className="text-lg font-bold text-white group-hover:text-cyan transition-colors mb-2">Work</h3>
             <p className="text-xs md:text-sm text-slate/80 leading-relaxed">Projects and systems I’ve built across different domains.</p>
           </Link>
           <Link href="/journey" className="group p-6 md:p-8 border border-white/5 rounded-xl bg-white/[0.01] hover:bg-white/[0.03] hover:border-cyan/20 transition-all duration-300 shadow-lg hover:shadow-cyan/5">
             <h3 className="text-lg font-bold text-white group-hover:text-cyan transition-colors mb-2">Journey</h3>
-            <p className="text-xs md:text-sm text-slate/80 leading-relaxed">Education, experiences, and the path that’s shaping how I think.</p>
-          </Link>
-          <Link href="/archive" className="group p-6 md:p-8 border border-white/5 rounded-xl bg-white/[0.01] hover:bg-white/[0.03] hover:border-cyan/20 transition-all duration-300 shadow-lg hover:shadow-cyan/5">
-            <h3 className="text-lg font-bold text-white group-hover:text-cyan transition-colors mb-2">Archive</h3>
-            <p className="text-xs md:text-sm text-slate/80 leading-relaxed">Ideas, experiments, and things still evolving.</p>
+            <p className="text-xs md:text-sm text-slate/80 leading-relaxed">Education, learnings, and the path that’s shaping how I think.</p>
           </Link>
         </div>
       </section>

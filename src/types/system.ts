@@ -1,4 +1,4 @@
-export type ContentCategory = 'work' | 'journey' | 'archive';
+export type ContentCategory = 'work' | 'journey';
 
 export type ContentType = 
   | 'project' 
@@ -6,17 +6,11 @@ export type ContentType =
   | 'research' 
   | 'major-build' 
   | 'learning' 
-  | 'education' 
-  | 'growth' 
-  | 'experience' 
-  | 'experiment' 
-  | 'note' 
-  | 'snippet';
+  | 'education';
 
 export const CATEGORY_MAP: Record<ContentCategory, ContentType[]> = {
-  work:['project', 'role', 'research', 'major-build'],
-  journey:['learning', 'education', 'growth', 'experience'],
-  archive: ['experiment', 'note', 'snippet']
+  work: ['project', 'role', 'research', 'major-build'],
+  journey: ['learning', 'education'],
 };
 
 interface BaseBlock {

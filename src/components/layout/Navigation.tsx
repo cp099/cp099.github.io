@@ -7,7 +7,6 @@ const NAV_ITEMS = [
   { name: 'About', href: '/about' },
   { name: 'Work', href: '/work' },
   { name: 'Journey', href: '/journey' },
-  { name: 'Archive', href: '/archive' },
 ];
 
 export default function Navigation() {

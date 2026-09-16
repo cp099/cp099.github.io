@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const buildDate = new Date();
 
   // 1. Core Static Pages
-  const staticPages = ['', '/about', '/work', '/journey', '/archive'].map((route) => ({
+  const staticPages = ['', '/about', '/work', '/journey'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: buildDate,
     changeFrequency: 'daily' as const,
