@@ -25,6 +25,11 @@ import { content as valoraValuationSociety } from '@/content/work/valora-valuati
 import { content as cucaPromotionsSponsorships } from '@/content/work/cuca-promotions-sponsorships';
 import { content as capsGroupPeerTrainer } from '@/content/work/caps-group-peer-trainer';
 import { content as bycStudentCouncil } from '@/content/work/byc-student-council';
+import { content as skillStakeholderManagement } from '@/content/journey/stakeholder-management';
+import { content as skillEventManagement } from '@/content/journey/event-management';
+import { content as skillDataAnalysis } from '@/content/journey/data-analysis';
+import { content as skillLeadership } from '@/content/journey/leadership';
+import { content as skillFinancialAnalysis } from '@/content/journey/financial-analysis';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -53,6 +58,11 @@ const ALL_CONTENT: ContentItem[] = [
   cucaPromotionsSponsorships,
   capsGroupPeerTrainer,
   bycStudentCouncil,
+  skillStakeholderManagement,
+  skillEventManagement,
+  skillDataAnalysis,
+  skillLeadership,
+  skillFinancialAnalysis,
 ];
 
 
