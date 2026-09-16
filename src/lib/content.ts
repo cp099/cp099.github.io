@@ -30,6 +30,7 @@ import { content as skillEventManagement } from '@/content/journey/event-managem
 import { content as skillDataAnalysis } from '@/content/journey/data-analysis';
 import { content as skillLeadership } from '@/content/journey/leadership';
 import { content as skillFinancialAnalysis } from '@/content/journey/financial-analysis';
+import { content as zenithos } from '@/content/work/zenithos';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -63,6 +64,7 @@ const ALL_CONTENT: ContentItem[] = [
   skillDataAnalysis,
   skillLeadership,
   skillFinancialAnalysis,
+  zenithos,
 ];
 
 
