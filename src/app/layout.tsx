@@ -113,7 +113,7 @@ export default function RootLayout({
         </div>
 
         <Navigation />
-        <main className="container mx-auto px-6 pt-24 flex-grow relative z-10">
+        <main className="container mx-auto px-6 pt-24 relative z-10">
           {children}
         </main>
         
