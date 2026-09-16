@@ -30,7 +30,7 @@ export default function HomePage() {
   },[]);
 
   return (
-    <div className="max-w-6xl mx-auto animate-reveal pb-16 md:pb-24 px-1">
+    <div className="max-w-6xl mx-auto animate-reveal px-1">
       <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start mb-20 md:mb-32">
         
         {/* --- LEFT: PRESENCE & TRIGGER --- */}

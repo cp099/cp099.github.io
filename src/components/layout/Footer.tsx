@@ -28,7 +28,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="mt-20 md:mt-32 border-t border-white/10 bg-navy/50 pb-8 md:pb-0">
+    <footer className="mt-10 md:mt-12 border-t border-white/10 bg-navy/50 pb-8 md:pb-0">
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-16 md:mb-20">
           <div className="max-w-md text-left">
