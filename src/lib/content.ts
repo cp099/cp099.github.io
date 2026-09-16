@@ -31,6 +31,7 @@ import { content as skillDataAnalysis } from '@/content/journey/data-analysis';
 import { content as skillLeadership } from '@/content/journey/leadership';
 import { content as skillFinancialAnalysis } from '@/content/journey/financial-analysis';
 import { content as zenithos } from '@/content/work/zenithos';
+import { content as siphonix } from '@/content/work/siphonix';
 
 const ALL_CONTENT: ContentItem[] = [
   systemArchitecture,
@@ -65,6 +66,7 @@ const ALL_CONTENT: ContentItem[] = [
   skillLeadership,
   skillFinancialAnalysis,
   zenithos,
+  siphonix,
 ];
 
 
